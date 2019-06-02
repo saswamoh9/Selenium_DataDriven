@@ -13,18 +13,19 @@ public class browserConfiguration {
 	{
 		if (browserName.equalsIgnoreCase("chrome"))
 		{
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Resources\\Browser\\chromedriver.exe");
 			driver = new ChromeDriver();
-			//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Browserdrive\\chromedriver.exe");
-			
 		}
 		else if (browserName.equalsIgnoreCase("InternetExplorer")){
-			driver=new InternetExplorerDriver();
+			
 			System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+"\\Resources\\Browser\\IEDriverServer.exe");
+			driver=new InternetExplorerDriver();
 		}
 		else if (browserName.equalsIgnoreCase("firefox"))
 		{
+			
+			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\Resources\\Browser\\geckodriver.exe");
 			driver = new FirefoxDriver();
-			System.setProperty("webdriver.gecko.driver","D:\\Selenium_Data_Driven\\Browser\\geckodriver.exe");
 			
 		}
 		else

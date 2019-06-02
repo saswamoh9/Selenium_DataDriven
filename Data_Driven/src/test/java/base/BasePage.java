@@ -44,7 +44,7 @@ public class BasePage {
 		String browserName = cnfgRdrObj.getConfigDetails("browser");
 		driver = brwsrconfigObj.browserconfig(browserName);
 		driver.get("https://azure.microsoft.com/");
-		driver.wait(500);
+		
 	}
 	
 	

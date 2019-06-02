@@ -9,7 +9,7 @@ public class LogHelper {
 	
 	public Logger printLogs(Class<?> classname)
 	{
-		PropertyConfigurator.configure("D:\\Selenium_Data_Driven\\Data_Driven\\Property_Files\\log4j.properties");
+		PropertyConfigurator.configure(System.getProperty("user.dir")+"\\Property_Files\\log4j.properties");
 		return Logger.getLogger(classname);
 		
 	}
