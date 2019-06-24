@@ -15,7 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
+
 
 import com.google.common.io.Files;
 import com.relevantcodes.extentreports.ExtentReports;
@@ -25,29 +25,30 @@ import utilities.ConfigReader;
 import utilities.ExtentReportManager;
 import utilities.LogHelper;
 import utilities.browserConfiguration;
+
+
 public class BasePage {
 	
-	public static WebDriver driver;
-	
+	public WebDriver driver;
+	String browserName;
 	
 	ConfigReader cnfgRdrObj = new ConfigReader();
 	browserConfiguration brwsrconfigObj = new browserConfiguration();
-	LogHelper logObj = new LogHelper();
+	
 	public ExtentReports repo = ExtentReportManager.getInstance();
 	public static ExtentTest ExTest;
 	
-	Logger log = logObj.printLogs(BasePage.class);
+	Logger log = LogHelper.printLogs(BasePage.class);
 	
 	@BeforeSuite
 	public void setUp() throws IOException, InterruptedException
 	{
-		String browserName = cnfgRdrObj.getConfigDetails("browser");
+		browserName = cnfgRdrObj.getConfigDetails("browser");
 		driver = brwsrconfigObj.browserconfig(browserName);
-		driver.get("https://azure.microsoft.com/");
-		
+				
 	}
 	
-	
+		
 	public void TakeScreenshot(ITestResult result) throws IOException
 	{
 		final DateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd SSS");
@@ -62,12 +63,7 @@ public class BasePage {
 		Files.copy(src, target);
 	}
 	
-	@Test
-	public void test_case_1()
-	{
-		System.out.print("Test Case 1 executed");
-		log.info("Saswat");
-	}
+	
 	
 	
 	@AfterSuite
