@@ -10,7 +10,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import utilities.LogHelper;
+
 import utilities.PropertyReader;
 import utilities.dateSelector;
 

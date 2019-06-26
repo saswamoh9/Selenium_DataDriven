@@ -13,7 +13,9 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 
@@ -35,12 +37,12 @@ public class BasePage {
 	ConfigReader cnfgRdrObj = new ConfigReader();
 	browserConfiguration brwsrconfigObj = new browserConfiguration();
 	
-	public ExtentReports repo = ExtentReportManager.getInstance();
+	public static ExtentReports repo;
 	public static ExtentTest ExTest;
 	
 	Logger log = LogHelper.printLogs(BasePage.class);
 	
-	@BeforeSuite
+	@BeforeClass
 	public void setUp() throws IOException, InterruptedException
 	{
 		browserName = cnfgRdrObj.getConfigDetails("browser");
@@ -66,7 +68,7 @@ public class BasePage {
 	
 	
 	
-	@AfterSuite
+	@AfterClass
 	public void tearDown()
 	{
 		driver.quit();
