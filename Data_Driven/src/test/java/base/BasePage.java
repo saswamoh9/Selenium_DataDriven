@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 
@@ -17,14 +18,15 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
-
+import org.testng.annotations.BeforeTest;
 
 import com.google.common.io.Files;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
+import executionEngine.ExecutionEngineRun;
 import utilities.ConfigReader;
-import utilities.ExtentReportManager;
+import utilities.Excel_Reader;
 import utilities.LogHelper;
 import utilities.browserConfiguration;
 
@@ -41,12 +43,43 @@ public class BasePage {
 	public static ExtentTest ExTest;
 	
 	Logger log = LogHelper.printLogs(BasePage.class);
+	@BeforeSuite
+	public void testcasese() throws IOException
+	{
+		ArrayList<String> s = ExecutionEngineRun.TestSuiteToBeExecuted();
+		
+		for(int i=0;i<s.size();i++)
+		{
+			System.out.println(s.get(i));
+		}
+		
+		for(int j=0;j<s.size();j++)
+		{
+			String Mod_Type[] = s.get(j).split("_", 2);
+			String fileName = "D:\\Data_Driven_Java\\Selenium_DataDriven\\Data_Driven\\Resources\\Excel_Files\\"+Mod_Type[0]+".xlsx";
+			//System.out.println(fileName);
+			Excel_Reader Er = new Excel_Reader(fileName);
+			int rowlen = Er.getSheetData("Test_Case_List", 0).length;
+			ArrayList<String> TestCaseList = new ArrayList<String>();
+			
+			for(int i=1;i<rowlen;i++)
+			{
+				if(Er.getSheetData("Test_Case_List",0)[i][3].equalsIgnoreCase("Y"))
+				{
+					TestCaseList.add(Er.getSheetData("Test_Case_List",0)[i][1].toString());
+				}
+			}
+			System.out.println(TestCaseList);
+		}
+		
+	}
 	
 	@BeforeClass
 	public void setUp() throws IOException, InterruptedException
 	{
 		browserName = cnfgRdrObj.getConfigDetails("browser");
 		driver = brwsrconfigObj.browserconfig(browserName);
+		driver.get("https://www.makemytrip.com/");
 				
 	}
 	

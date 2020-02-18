@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" allow-return-values="true">
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.FlightPageTestCase">
+      <class name="executionEngine.ExecutionEngineRun">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="TestCase_1"/>
+          <include name="SuiteSelector"/>
         </methods>
-      </class> <!-- testCases.FlightPageTestCase -->
+      </class> <!-- executionEngine.ExecutionEngineRun -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.FlightPageTestCase">
+      <class name="executionEngine.ExecutionEngineRun">
         <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="TestCase_1"/>
+          <include name="SuiteSelector"/>
         </methods>
-      </class> <!-- testCases.FlightPageTestCase -->
+      </class> <!-- executionEngine.ExecutionEngineRun -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

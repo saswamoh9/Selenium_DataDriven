@@ -8,7 +8,14 @@
   <test name="Test">
     <classes>
       <class name="base.BasePage"/>
-      <class name="testCases.FlightPageTestCase"/>
+      <class name="testCases.Flight_Test_Cases.Flight_TC_01">
+      	<methods>
+      		<exclude name="verify_title" />
+      		<include name="verify_menu_options" />
+      		<include name="verify_more_dropdown" />
+      		<exclude name="Verify_Deparature_details" />
+      	</methods>
+      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

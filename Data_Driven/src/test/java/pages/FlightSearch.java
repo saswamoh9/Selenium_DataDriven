@@ -23,17 +23,10 @@ public class FlightSearch {
 		this.driver = driver;
 	}
 		
-	PageNavigation pgnav = new PageNavigation(driver);
+	
 	
 	Logger log = Logger.getLogger("devpinoyLogger");
 
-	
-	
-	
-	public void initialise_flight()
-	{
-		pgnav.navigate_to_Flight();
-	}
 	
 	
 	public void enterFrom(String From, String FromCity) throws IOException
