@@ -7,24 +7,29 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
+import org.testng.TestNG;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.xml.XmlSuite;
 
 import com.google.common.io.Files;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
 import executionEngine.ExecutionEngineRun;
+import executionEngine.TestngXmlCreator;
 import utilities.ConfigReader;
 import utilities.Excel_Reader;
 import utilities.LogHelper;
@@ -46,32 +51,8 @@ public class BasePage {
 	@BeforeSuite
 	public void testcasese() throws IOException
 	{
-		ArrayList<String> s = ExecutionEngineRun.TestSuiteToBeExecuted();
 		
-		for(int i=0;i<s.size();i++)
-		{
-			System.out.println(s.get(i));
-		}
-		
-		for(int j=0;j<s.size();j++)
-		{
-			String Mod_Type[] = s.get(j).split("_", 2);
-			String fileName = "D:\\Data_Driven_Java\\Selenium_DataDriven\\Data_Driven\\Resources\\Excel_Files\\"+Mod_Type[0]+".xlsx";
-			//System.out.println(fileName);
-			Excel_Reader Er = new Excel_Reader(fileName);
-			int rowlen = Er.getSheetData("Test_Case_List", 0).length;
-			ArrayList<String> TestCaseList = new ArrayList<String>();
-			
-			for(int i=1;i<rowlen;i++)
-			{
-				if(Er.getSheetData("Test_Case_List",0)[i][3].equalsIgnoreCase("Y"))
-				{
-					TestCaseList.add(Er.getSheetData("Test_Case_List",0)[i][1].toString());
-				}
-			}
-			System.out.println(TestCaseList);
-		}
-		
+
 	}
 	
 	@BeforeClass

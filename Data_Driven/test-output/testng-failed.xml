@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Flight]">
+  <listeners>
+    <listener class-name="helperClasses.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="TC_01(failed)">
     <classes>
-      <class name="executionEngine.ExecutionEngineRun">
+      <class name="testCases.Flight_Test_Cases.Flight_TC_01">
         <methods>
-          <include name="SuiteSelector"/>
+          <include name="testcasese"/>
+          <include name="setUp"/>
+          <include name="Verify_Default_From_Field"/>
+          <include name="Verify_Colour_Flight_Icon"/>
+          <include name="tearDown"/>
+          <include name="Verify_Default_To_Field"/>
         </methods>
-      </class> <!-- executionEngine.ExecutionEngineRun -->
+      </class> <!-- testCases.Flight_Test_Cases.Flight_TC_01 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TC_01(failed) -->
+</suite> <!-- Failed suite [Flight] -->

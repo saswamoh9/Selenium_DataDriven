@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+      <class name="testCases.Holiday_Test_Cases.Holiday_TC_01"/>
+      <class name="testCases.Holiday_Test_Cases.Holiday_TC_02"/>
+      <class name="testCases.Holiday_Test_Cases.Holiday_TC_03"/>
+      <class name="testCases.Holiday_Test_Cases.Holiday_TC_04"/>
+      <class name="testCases.Holiday_Test_Cases.Holiday_TC_05"/>
+      <class name="testCases.Holiday_Test_Cases.Holiday_TC_06"/>
+      <class name="testCases.Holiday_Test_Cases.Holiday_TC_07"/>
+      <class name="testCases.Holiday_Test_Cases.Holiday_TC_08"/>
+      <class name="testCases.Holiday_Test_Cases.Holiday_TC_09"/>
+      <class name="testCases.Holiday_Test_Cases.Holiday_TC_10"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

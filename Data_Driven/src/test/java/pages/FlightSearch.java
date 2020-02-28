@@ -162,9 +162,10 @@ public class FlightSearch {
 		driver.findElement(By.xpath(PropertyReader.OR_Reader("flight_OR", "flight_travelclass_apply"))).click();
 		Thread.sleep(5000);
 	}
-	public void clickSearch() throws IOException, InterruptedException
+	public FlightSearchResult clickSearch() throws IOException, InterruptedException
 	{
 		driver.findElement(By.xpath(PropertyReader.OR_Reader("flight_OR", "flight_search_button"))).click();
 		Thread.sleep(5000);
+		return new FlightSearchResult();
 	}
 }

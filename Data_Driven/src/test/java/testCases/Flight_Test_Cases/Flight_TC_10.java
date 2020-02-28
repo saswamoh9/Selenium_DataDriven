@@ -1,5 +1,9 @@
 package testCases.Flight_Test_Cases;
 
-public class Flight_TC_10 {
+import org.testng.annotations.Test;
 
+public class Flight_TC_10 {
+  @Test
+  public void f() {
+  }
 }

@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="executionEngine.ExecutionEngineRun">
+      <class name="testCases.Flight_Test_Cases.Flight_TC_01">
         <methods>
-          <include name="SuiteSelector"/>
+          <include name="testcasese"/>
+          <include name="setUp"/>
+          <include name="Verify_Colour_Flight_Icon"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- executionEngine.ExecutionEngineRun -->
+      </class> <!-- testCases.Flight_Test_Cases.Flight_TC_01 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

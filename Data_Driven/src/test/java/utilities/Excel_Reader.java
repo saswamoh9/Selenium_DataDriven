@@ -27,20 +27,8 @@ public class Excel_Reader {
 		workbook = new XSSFWorkbook(fis);
 	}
 	
-	/**************************************
-	 * Excel function to read the Module Wise List of Test Cases
-	 * @param sheetn
-	 * @param row
-	 * @param col
-	 * @return
-	 */
-	public Map<String, String> getTestCaseList(String moduleName)
-	{
-		return null;
-		
-	}
-	
-	/*public Map<String, Integer> getLastRowLastCol(String Sheetname, int startRowNum){
+	//Function to get Last Row & Column Number of a sheet
+	public Map<String, Integer> getLastRowLastCol(String Sheetname, int startRowNum){
 		sheet = workbook.getSheet(Sheetname);
 		int row_num = sheet.getLastRowNum();
 		XSSFRow row = sheet.getRow(startRowNum);
@@ -50,9 +38,8 @@ public class Excel_Reader {
 		row_col.put("LastRow", row_num);
 		row_col.put("LastCol", col_num);
 		row_col.put("StartRow", startRowNum);
-		System.out.println(row_col);
 		return row_col;
-	}*/
+	}
 	
 	
 	public String[][] getSheetData(String sheetName, int startrow)
@@ -61,15 +48,13 @@ public class Excel_Reader {
 	    String value ="";
 	    String[][] data = null;
 	    
-
-
-	    int rowCount = workbook.getSheet(sheetName).getLastRowNum()+1;
-	    
-	    int colCount = workbook.getSheet(sheetName).getRow(startrow).getLastCellNum();
+	    Map<String, Integer> sheetLastRowCol = getLastRowLastCol(sheetName,startrow);
+	    int rowCount = sheetLastRowCol.get("LastRow")+1;
+	    int colCount = sheetLastRowCol.get("LastCol");
 	    
 	    data = new String[rowCount][colCount];
 
-	    for(int i=1; i<rowCount;i++)
+	    for(int i=0; i<rowCount;i++)
 	    {           
 	    	
 	        Row row = workbook.getSheet(sheetName).getRow(i);
@@ -86,16 +71,10 @@ public class Excel_Reader {
 	            {
 	                value = cell.getStringCellValue();
 	            }
-	            data[i][j] = value;
-	            
-
-
+	            data[i][j] = value;          
 	        }
 	    }
 	    return data;
-
 	}
-	
-	
 	
 }

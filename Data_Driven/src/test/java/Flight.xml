@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Flight" parallel="false">
+	<listeners>
+		<listener class-name="helperClasses.Listeners"></listener>
+	</listeners>
+	
+  <test name="TC_01">
+    <classes>
+      <class name="testCases.Flight_Test_Cases.Flight_TC_01"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test name="TC_02">
+    <classes>
+      
+      <class name="testCases.Flight_Test_Cases.Flight_TC_02"/>
+      <class name="testCases.Flight_Test_Cases.Flight_TC_03"/>
+      <class name="testCases.Flight_Test_Cases.Flight_TC_04"/>
+      <class name="testCases.Flight_Test_Cases.Flight_TC_05"/>
+      <class name="testCases.Flight_Test_Cases.Flight_TC_06"/>
+      <class name="testCases.Flight_Test_Cases.Flight_TC_07"/>
+      <class name="testCases.Flight_Test_Cases.Flight_TC_08"/>
+      <class name="testCases.Flight_Test_Cases.Flight_TC_09"/>
+      <class name="testCases.Flight_Test_Cases.Flight_TC_10"/>
+    </classes>
+  </test>
+  
+</suite> <!-- Suite -->
