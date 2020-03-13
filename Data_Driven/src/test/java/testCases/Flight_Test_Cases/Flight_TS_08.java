@@ -2,7 +2,7 @@ package testCases.Flight_Test_Cases;
 
 import org.testng.annotations.Test;
 
-public class Flight_TC_06 {
+public class Flight_TS_08 {
   @Test
   public void f() {
   }

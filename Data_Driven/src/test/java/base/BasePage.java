@@ -48,6 +48,15 @@ public class BasePage {
 	public static ExtentTest ExTest;
 	
 	Logger log = LogHelper.printLogs(BasePage.class);
+	
+	public Object[][] getDataForTest(String path, String TC_No) throws IOException
+	{
+			String fileName = path;
+			Excel_Reader Er = new Excel_Reader(fileName);
+			Object[][] data = Er.getTestData(TC_No);
+			return data;	
+	}
+	
 	@BeforeSuite
 	public void testcasese() throws IOException
 	{

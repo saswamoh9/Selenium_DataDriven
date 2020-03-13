@@ -4,16 +4,10 @@ package executionEngine;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-
-import org.testng.annotations.Test;
-
-import utilities.Dataprovider;
 import utilities.Excel_Reader;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ExecutionEngineRun {
 
@@ -44,9 +38,7 @@ public class ExecutionEngineRun {
 	public static ArrayList<ArrayList<String>> TCtoBeExecuted() throws IOException
 	{
 		ArrayList<String> s = ExecutionEngineRun.TestSuiteToBeExecuted();
-		String[][] TestCaseArray1 = null;
 		  ArrayList<ArrayList<String> > x = new ArrayList<ArrayList<String> >(); 
-		int t=0;
 		for(int j=0;j<s.size();j++)
 		{
 			
@@ -54,61 +46,101 @@ public class ExecutionEngineRun {
 			System.out.println(fileName);
 			Excel_Reader Er = new Excel_Reader(fileName);
 			String[][] TestCaseStringArray = Er.getSheetData("Test_Case_List", 0);
-			int n=0;
 			for(int i=0;i<TestCaseStringArray.length;i++)
 			{
 				
-				if(TestCaseStringArray[i][3].equalsIgnoreCase("Y"))
+				if(TestCaseStringArray[i][5].equalsIgnoreCase("Y"))
 				{
 					
 						x.add(new ArrayList<String>(Arrays.asList(TestCaseStringArray[i][0],TestCaseStringArray[i][1]
-								,TestCaseStringArray[i][2],TestCaseStringArray[i][3],TestCaseStringArray[i][4])));
+								,TestCaseStringArray[i][2],TestCaseStringArray[i][3],TestCaseStringArray[i][4],
+								TestCaseStringArray[i][5],TestCaseStringArray[i][6])));
 					
 					 
 				}
 			}
 			
 		}
+		System.out.println(x);
 		return x;
 	}
 	
-	public static ArrayList<String> ExecuteDataYesTestCases() throws IOException
+	public static Map<String, ArrayList<String>> ExecuteDataYesTestCases() throws IOException
 	{
 		ArrayList<ArrayList<String>> TestCaseExecutionlist = TCtoBeExecuted();
-	
 		int StringArraySize = TestCaseExecutionlist.size();
+		HashMap<String, ArrayList<String>> MapTestDataTC = new HashMap<String, ArrayList<String>>();
 		ArrayList<String> TestDataTC = new ArrayList<String>();
-		for(int i=0; i<StringArraySize;i++)
-		{
-			
-			if(TestCaseExecutionlist.get(i).get(4).equalsIgnoreCase("Y"))
+		String index=TestCaseExecutionlist.get(0).get(1);
+		ArrayList<String> distinctClass = new ArrayList<>();
+		//TestDataTC.add(TestCaseExecutionlist.get(0).get(4));
+		//MapTestDataTC.put(index, TestDataTC);
+		//This function list all the distinct class names
+		for(int i=1; i<StringArraySize;i++)
+		{	
+			if(index.equalsIgnoreCase(TestCaseExecutionlist.get(i).get(1))&&i!=StringArraySize)
 			{
-				TestDataTC.add(TestCaseExecutionlist.get(i).get(1));
+				continue;
+			}
+			else if(index!=TestCaseExecutionlist.get(i).get(1)&&i!=StringArraySize)
+			{
+				distinctClass.add(index);
+				index = TestCaseExecutionlist.get(i).get(1);
 			}
 			
 		}
-		System.out.println(TestDataTC);
-		return TestDataTC;
+		distinctClass.add(index);
+		
+		System.out.println("Distinct Classes");
+		System.out.println(distinctClass);
+		int j=0;
+		for(int i=0;i<distinctClass.size();i++)
+		{
+			ArrayList<String> val = new ArrayList<String>();
+			MapTestDataTC.put(distinctClass.get(i), val);
+			while(j<StringArraySize)
+			{
+				if(distinctClass.get(i).equalsIgnoreCase(TestCaseExecutionlist.get(j).get(1)))
+				{
+					val.add(TestCaseExecutionlist.get(j).get(4));
+					j++;
+				}
+				else
+				{
+					break;
+				}
+			}
+		}
+		System.out.println(MapTestDataTC);
+		return MapTestDataTC;
 		
 	}
 	
-	public static ArrayList<String> ExecuteDataNoTestCases() throws IOException
+	/*public static Map<String, ArrayList<String>> ExecuteDataNoTestCases() throws IOException
 	{
 		ArrayList<ArrayList<String>> TestCaseExecutionlist = TCtoBeExecuted();
 		
 		int StringArraySize = TestCaseExecutionlist.size();
+		Map<String, ArrayList<String>> MapNoTestDataTC = new HashMap<>();
 		ArrayList<String> NoTestDataTC = new ArrayList<String>();
 		for(int i=0; i<StringArraySize;i++)
 		{
-			
-			if(TestCaseExecutionlist.get(i).get(4).equalsIgnoreCase("N"))
+			if(TestCaseExecutionlist.get(i).get(1).equalsIgnoreCase(TestCaseExecutionlist.get(i+1).get(1)))
 			{
-				NoTestDataTC.add(TestCaseExecutionlist.get(i).get(1));
+				NoTestDataTC.clear();
+				i++;
+				NoTestDataTC.add(TestCaseExecutionlist.get(i).get(4));
 			}
+			MapNoTestDataTC.put(TestCaseExecutionlist.get(i).get(1), NoTestDataTC);
 			
 		}
+		System.out.println("Test Case With No Test Data");
 		System.out.println(NoTestDataTC);
-		return NoTestDataTC;
-	}
+		return MapNoTestDataTC;
+	}*/
+	
+	
+	
+	
 	
 }

@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 
 import java.io.IOException;
 import java.util.HashMap;
-
+import java.util.Iterator;
 import java.util.Map;
 
 import org.apache.poi.ss.usermodel.Cell;
@@ -77,4 +77,54 @@ public class Excel_Reader {
 	    return data;
 	}
 	
+	public Object[][] getTestData(String TC_No)
+	{
+		sheet = workbook.getSheet("Test_Data");
+		int lastrow = sheet.getLastRowNum();
+		int lastcol = 0;
+		int Tcstartrow = 0;
+		int Tcendrow = 0;
+		for(int i=0;i<lastrow;i++)
+		{
+			if(sheet.getRow(i).getCell(0).getStringCellValue().equals(TC_No))
+			{
+				Tcstartrow=i+1;
+				Row row = sheet.getRow(Tcstartrow);
+				lastcol = row.getLastCellNum();
+				for(int j=Tcstartrow;j<lastrow;j++)
+				{
+					if(sheet.getRow(j).getCell(0).getStringCellValue().startsWith("TC"))
+					{
+						Tcendrow = j-1;
+						j = lastrow;
+						i = lastrow;
+					}
+				}
+			}
+		}
+		
+		Object[][] data = new String[(Tcendrow-Tcstartrow)+1][lastcol];
+		String value ="";
+	    for(int i=Tcstartrow; i<Tcendrow;i++)
+	    {           
+	    	
+	        Row row = workbook.getSheet("Test_Data").getRow(i);
+	        for(int j=0;j<lastcol;j++)
+	        {
+
+
+	            Cell cell = row.getCell(j);
+	            if(cell.getCellType()==cell.getCellType().NUMERIC)
+	            {
+	                value = ""+cell.getStringCellValue();
+	            }
+	            else
+	            {
+	                value = cell.getStringCellValue();
+	            }
+	            data[i][j] = value;          
+	        }
+	    }
+		return data;
+	}
 }

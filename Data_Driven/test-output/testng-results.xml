@@ -1,77 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+<testng-results skipped="0" failed="0" ignored="4" total="14" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Flight" duration-ms="9711" started-at="2020-02-28T18:46:27Z" finished-at="2020-02-28T18:46:37Z">
+  <suite name="Flight" duration-ms="11614" started-at="2020-03-13T20:45:03Z" finished-at="2020-03-13T20:45:15Z">
     <groups>
     </groups>
-    <test name="TmpTest" duration-ms="9711" started-at="2020-02-28T18:46:27Z" finished-at="2020-02-28T18:46:37Z">
-      <class name="testCases.Flight_Test_Cases.Flight_TC_08">
-        <test-method status="PASS" signature="f()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TC_08@35cabb2a]" name="f" duration-ms="0" started-at="2020-02-28T18:46:37Z" finished-at="2020-02-28T18:46:37Z">
+    <test name="TmpTest" duration-ms="11614" started-at="2020-03-13T20:45:03Z" finished-at="2020-03-13T20:45:15Z">
+      <class name="testCases.Flight_Test_Cases.Flight_TS_02">
+        <test-method status="PASS" signature="TC_01_Return_Verify_From_City()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TS_02@79e2c065]" name="TC_01_Return_Verify_From_City" duration-ms="4" started-at="2020-03-13T20:45:03Z" finished-at="2020-03-13T20:45:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- testCases.Flight_Test_Cases.Flight_TC_08 -->
-      <class name="testCases.Flight_Test_Cases.Flight_TC_04">
-        <test-method status="PASS" signature="f()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TC_04@3a93b025]" name="f" duration-ms="0" started-at="2020-02-28T18:46:37Z" finished-at="2020-02-28T18:46:37Z">
+        </test-method> <!-- TC_01_Return_Verify_From_City -->
+        <test-method status="PASS" signature="TC_02_Return_Verify_To_City()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TS_02@79e2c065]" name="TC_02_Return_Verify_To_City" duration-ms="1" started-at="2020-03-13T20:45:03Z" finished-at="2020-03-13T20:45:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- testCases.Flight_Test_Cases.Flight_TC_04 -->
-      <class name="testCases.Flight_Test_Cases.Flight_TC_01">
-        <test-method status="PASS" signature="testcasese()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TC_01@478190fc]" name="testcasese" is-config="true" duration-ms="19" started-at="2020-02-28T18:46:27Z" finished-at="2020-02-28T18:46:27Z">
+        </test-method> <!-- TC_02_Return_Verify_To_City -->
+        <test-method status="PASS" signature="TC_03_Return_Verify_Default_Dep_Date()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TS_02@79e2c065]" name="TC_03_Return_Verify_Default_Dep_Date" duration-ms="1" started-at="2020-03-13T20:45:03Z" finished-at="2020-03-13T20:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_Return_Verify_Default_Dep_Date -->
+        <test-method status="PASS" signature="TC_04_Return_Verify_Default_Ret_Date()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TS_02@79e2c065]" name="TC_04_Return_Verify_Default_Ret_Date" duration-ms="1" started-at="2020-03-13T20:45:03Z" finished-at="2020-03-13T20:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_Return_Verify_Default_Ret_Date -->
+        <test-method status="PASS" signature="TC_05_Return_Verify_Search_button()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TS_02@79e2c065]" name="TC_05_Return_Verify_Search_button" duration-ms="1" started-at="2020-03-13T20:45:03Z" finished-at="2020-03-13T20:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05_Return_Verify_Search_button -->
+      </class> <!-- testCases.Flight_Test_Cases.Flight_TS_02 -->
+      <class name="testCases.Flight_Test_Cases.Flight_TS_01">
+        <test-method status="PASS" signature="testcasese()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TS_01@478190fc]" name="testcasese" is-config="true" duration-ms="18" started-at="2020-03-13T20:45:03Z" finished-at="2020-03-13T20:45:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcasese -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TC_01@478190fc]" name="setUp" is-config="true" duration-ms="7511" started-at="2020-02-28T18:46:28Z" finished-at="2020-02-28T18:46:35Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TS_01@478190fc]" name="setUp" is-config="true" duration-ms="10403" started-at="2020-03-13T20:45:03Z" finished-at="2020-03-13T20:45:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Verify_Colour_Flight_Icon()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TC_01@478190fc]" name="Verify_Colour_Flight_Icon" duration-ms="307" started-at="2020-02-28T18:46:35Z" finished-at="2020-02-28T18:46:35Z">
+        <test-method status="PASS" signature="TC_01_Verify_Colour_Flight_Icon()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TS_01@478190fc]" name="TC_01_Verify_Colour_Flight_Icon" duration-ms="95" started-at="2020-03-13T20:45:14Z" finished-at="2020-03-13T20:45:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Colour_Flight_Icon -->
-        <test-method status="PASS" signature="Verify_Default_Arr_Date()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TC_01@478190fc]" name="Verify_Default_Arr_Date" duration-ms="0" started-at="2020-02-28T18:46:35Z" finished-at="2020-02-28T18:46:35Z">
+        </test-method> <!-- TC_01_Verify_Colour_Flight_Icon -->
+        <test-method status="PASS" signature="TC_02_Verify_Default_TripType()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TS_01@478190fc]" name="TC_02_Verify_Default_TripType" duration-ms="0" started-at="2020-03-13T20:45:14Z" finished-at="2020-03-13T20:45:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Default_Arr_Date -->
-        <test-method status="PASS" signature="Verify_Default_Dep_Date()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TC_01@478190fc]" name="Verify_Default_Dep_Date" duration-ms="0" started-at="2020-02-28T18:46:35Z" finished-at="2020-02-28T18:46:35Z">
+        </test-method> <!-- TC_02_Verify_Default_TripType -->
+        <test-method status="PASS" signature="TC_04_Verify_Default_To_Field()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TS_01@478190fc]" name="TC_04_Verify_Default_To_Field" duration-ms="69" started-at="2020-03-13T20:45:14Z" finished-at="2020-03-13T20:45:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Default_Dep_Date -->
-        <test-method status="PASS" signature="Verify_Default_From_Field()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TC_01@478190fc]" name="Verify_Default_From_Field" duration-ms="220" started-at="2020-02-28T18:46:35Z" finished-at="2020-02-28T18:46:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Default_From_Field -->
-        <test-method status="PASS" signature="Verify_Default_Search_Btn()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TC_01@478190fc]" name="Verify_Default_Search_Btn" duration-ms="1" started-at="2020-02-28T18:46:36Z" finished-at="2020-02-28T18:46:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Default_Search_Btn -->
-        <test-method status="PASS" signature="Verify_Default_To_Field()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TC_01@478190fc]" name="Verify_Default_To_Field" duration-ms="66" started-at="2020-02-28T18:46:36Z" finished-at="2020-02-28T18:46:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Default_To_Field -->
-        <test-method status="PASS" signature="Verify_Default_TripType()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TC_01@478190fc]" name="Verify_Default_TripType" duration-ms="0" started-at="2020-02-28T18:46:36Z" finished-at="2020-02-28T18:46:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Default_TripType -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TC_01@478190fc]" name="tearDown" is-config="true" duration-ms="1427" started-at="2020-02-28T18:46:36Z" finished-at="2020-02-28T18:46:37Z">
+        </test-method> <!-- TC_04_Verify_Default_To_Field -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TS_01@478190fc]" name="tearDown" is-config="true" duration-ms="882" started-at="2020-03-13T20:45:14Z" finished-at="2020-03-13T20:45:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.Flight_Test_Cases.Flight_TC_01 -->
-      <class name="testCases.Flight_Test_Cases.Flight_TC_02">
-        <test-method status="PASS" signature="f1()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TC_02@79e2c065]" name="f1" duration-ms="1" started-at="2020-02-28T18:46:37Z" finished-at="2020-02-28T18:46:37Z">
+      </class> <!-- testCases.Flight_Test_Cases.Flight_TS_01 -->
+      <class name="testCases.Flight_Test_Cases.Flight_TS_03">
+        <test-method status="PASS" signature="TC_01_Oneway_Search_Business()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TS_03@3a93b025]" name="TC_01_Oneway_Search_Business" duration-ms="1" started-at="2020-03-13T20:45:03Z" finished-at="2020-03-13T20:45:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f1 -->
-      </class> <!-- testCases.Flight_Test_Cases.Flight_TC_02 -->
-      <class name="testCases.Flight_Test_Cases.Flight_TC_09">
-        <test-method status="PASS" signature="f()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TC_09@7e07db1f]" name="f" duration-ms="0" started-at="2020-02-28T18:46:37Z" finished-at="2020-02-28T18:46:37Z">
+        </test-method> <!-- TC_01_Oneway_Search_Business -->
+        <test-method status="PASS" signature="TC_02_Oneway_Search_Economy()[pri:0, instance:testCases.Flight_Test_Cases.Flight_TS_03@3a93b025]" name="TC_02_Oneway_Search_Economy" duration-ms="1" started-at="2020-03-13T20:45:03Z" finished-at="2020-03-13T20:45:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- testCases.Flight_Test_Cases.Flight_TC_09 -->
+        </test-method> <!-- TC_02_Oneway_Search_Economy -->
+      </class> <!-- testCases.Flight_Test_Cases.Flight_TS_03 -->
     </test> <!-- TmpTest -->
   </suite> <!-- Flight -->
 </testng-results>
