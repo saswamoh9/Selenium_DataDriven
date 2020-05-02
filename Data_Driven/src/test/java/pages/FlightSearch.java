@@ -102,7 +102,7 @@ public class FlightSearch {
 		driver.findElement(By.xpath(PropertyReader.OR_Reader("flight_OR", "flight_traveller_class"))).click();
 	}
 	
-	public void enterNoOfAdults(int noOfAdults) throws IOException, InterruptedException
+	public void enterNoOfAdults(String noOfAdults) throws IOException, InterruptedException
 	{
 		WebElement ele = driver.findElement(By.xpath("//*[@class='travellers']//child::div[@class='appendBottom20']//child::ul[1]//li[contains(text(), '"+noOfAdults+"')]"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
@@ -113,7 +113,7 @@ public class FlightSearch {
 		Thread.sleep(5000);
 	}
 	
-	public void enterNoOfChildren(int noOfChildren) throws InterruptedException
+	public void enterNoOfChildren(String noOfChildren) throws InterruptedException
 	{
 		WebElement ele = driver.findElement(By.xpath("//*[@class='travellers']//child::div[@class='appendBottom20']//child::ul[2]//li[contains(text(), '"+noOfChildren+"')]"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
@@ -123,7 +123,7 @@ public class FlightSearch {
 		
 	}
 	
-	public void enterNoOfInfants(int noOfInfants) throws InterruptedException
+	public void enterNoOfInfants(String noOfInfants) throws InterruptedException
 	{
 		WebElement ele = driver.findElement(By.xpath("//*[@class='travellers']//child::div[@class='appendBottom20']//child::ul[3]//li[contains(text(), '"+noOfInfants+"')]"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;

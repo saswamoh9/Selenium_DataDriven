@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Flight]">
-  <listeners>
-    <listener class-name="helperClasses.Listeners"/>
-  </listeners>
-  <test thread-count="5" name="TC_01(failed)">
+  <test thread-count="5" name="TmpTest(failed)">
     <classes>
-      <class name="testCases.Flight_Test_Cases.Flight_TC_01">
+      <class name="testCases.Flight_Test_Cases.Flight_TS_03">
         <methods>
+          <include name="TS03_TC_01_Oneway_Search_Business" invocation-numbers="0 1 2"/>
           <include name="testcasese"/>
           <include name="setUp"/>
-          <include name="Verify_Default_From_Field"/>
-          <include name="Verify_Colour_Flight_Icon"/>
           <include name="tearDown"/>
-          <include name="Verify_Default_To_Field"/>
         </methods>
-      </class> <!-- testCases.Flight_Test_Cases.Flight_TC_01 -->
+      </class> <!-- testCases.Flight_Test_Cases.Flight_TS_03 -->
     </classes>
-  </test> <!-- TC_01(failed) -->
+  </test> <!-- TmpTest(failed) -->
 </suite> <!-- Failed suite [Flight] -->

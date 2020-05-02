@@ -31,6 +31,7 @@ public class Excel_Reader {
 	public Map<String, Integer> getLastRowLastCol(String Sheetname, int startRowNum){
 		sheet = workbook.getSheet(Sheetname);
 		int row_num = sheet.getLastRowNum();
+		System.out.println("Last Row Num="+row_num);
 		XSSFRow row = sheet.getRow(startRowNum);
 		int col_num = row.getLastCellNum();
 		

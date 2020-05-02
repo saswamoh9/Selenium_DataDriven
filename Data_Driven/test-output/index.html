@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Flight">
-              <span class="suite-name border-passed">Flight</span>
+              <span class="suite-name border-failed">Flight</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Flight" class="hide-methods failed suite-Flight"> (hide)</a> <!-- hide-methods failed suite-Flight -->
+                      <a href="#" panel-name="suite-Flight" class="show-methods failed suite-Flight"> (show)</a> <!-- show-methods failed suite-Flight -->
+                    </span>
+                    <div class="method-list-content failed suite-Flight">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Flight" title="testCases.Flight_Test_Cases.Flight_TS_03" hash-for-method="TS03_TC_01_Oneway_Search_Business(null, null, null, null, null, null, null, null, null, null, null)">TS03_TC_01_Oneway_Search_Business(null, null, null, null, null, null, null, null, null, null, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Flight" title="testCases.Flight_Test_Cases.Flight_TS_03" hash-for-method="TS03_TC_01_Oneway_Search_Business(OneWay, MAA, Chennai, BLR, Bengaluru, 18-Aug-2020, 2, 3, 2, Business, )">TS03_TC_01_Oneway_Search_Business(OneWay, MAA, Chennai, BLR, Bengaluru, 18-Aug-2020, 2, 3, 2, Business, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Flight" title="testCases.Flight_Test_Cases.Flight_TS_03" hash-for-method="TS03_TC_01_Oneway_Search_Business(OneWay, BBI, Bhubaneswar, BLR, Bengaluru, 22-Mar-2020, 2, 3, 2, Business, )">TS03_TC_01_Oneway_Search_Business(OneWay, BBI, Bhubaneswar, BLR, Bengaluru, 22-Mar-2020, 2, 3, 2, Business, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Flight -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,52 +126,7 @@
                     <div class="method-list-content passed suite-Flight">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Flight" title="testCases.Flight_Test_Cases.Flight_TS_03" hash-for-method="TC_01_Oneway_Search_Business">TC_01_Oneway_Search_Business</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Flight" title="testCases.Flight_Test_Cases.Flight_TS_02" hash-for-method="TC_01_Return_Verify_From_City">TC_01_Return_Verify_From_City</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Flight" title="testCases.Flight_Test_Cases.Flight_TS_01" hash-for-method="TC_01_Verify_Colour_Flight_Icon">TC_01_Verify_Colour_Flight_Icon</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Flight" title="testCases.Flight_Test_Cases.Flight_TS_03" hash-for-method="TC_02_Oneway_Search_Economy">TC_02_Oneway_Search_Economy</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Flight" title="testCases.Flight_Test_Cases.Flight_TS_02" hash-for-method="TC_02_Return_Verify_To_City">TC_02_Return_Verify_To_City</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Flight" title="testCases.Flight_Test_Cases.Flight_TS_01" hash-for-method="TC_02_Verify_Default_TripType">TC_02_Verify_Default_TripType</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Flight" title="testCases.Flight_Test_Cases.Flight_TS_02" hash-for-method="TC_03_Return_Verify_Default_Dep_Date">TC_03_Return_Verify_Default_Dep_Date</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Flight" title="testCases.Flight_Test_Cases.Flight_TS_02" hash-for-method="TC_04_Return_Verify_Default_Ret_Date">TC_04_Return_Verify_Default_Ret_Date</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Flight" title="testCases.Flight_Test_Cases.Flight_TS_01" hash-for-method="TC_04_Verify_Default_To_Field">TC_04_Verify_Default_To_Field</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Flight" title="testCases.Flight_Test_Cases.Flight_TS_02" hash-for-method="TC_05_Return_Verify_Search_button">TC_05_Return_Verify_Search_button</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Flight" title="testCases.Flight_Test_Cases.Flight_TS_01" hash-for-method="TS01_TC_01_Verify_Colour_Flight_Icon">TS01_TC_01_Verify_Colour_Flight_Icon</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Flight -->
@@ -162,71 +141,102 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Flight" class="panel Flight">
-          <div class="suite-Flight-class-passed">
+          <div class="suite-Flight-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testCases.Flight_Test_Cases.Flight_TS_03</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_01_Oneway_Search_Business">
-                  </a> <!-- TC_01_Oneway_Search_Business -->
-                  <span class="method-name">TC_01_Oneway_Search_Business</span>
+                  <a name="TS03_TC_01_Oneway_Search_Business(null, null, null, null, null, null, null, null, null, null, null)">
+                  </a> <!-- TS03_TC_01_Oneway_Search_Business(null, null, null, null, null, null, null, null, null, null, null) -->
+                  <span class="method-name">TS03_TC_01_Oneway_Search_Business</span>
+                  <span class="parameters">(null, null, null, null, null, null, null, null, null, null, null)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;li class=&quot;selected&quot;&gt; is not clickable at point (241,181) because another element &lt;div class=&quot;hsBackDrop&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;LIN37000696&apos;, ip: &apos;192.168.225.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 74.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200309095159, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16040, moz:profile: C:\Users\saswamoh\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 989f8e07-4cec-433e-8135-bd924cfc4715
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at pages.FlightSearch.enterFrom(FlightSearch.java:34)
+	at testCases.Flight_Test_Cases.Flight_TS_03.TS03_TC_01_Oneway_Search_Business(Flight_TS_03.java:24)
+	at executionEngine.TestngXmlCreator.xmlCreator(TestngXmlCreator.java:79)
+	at executionEngine.TestngXmlCreator.main(TestngXmlCreator.java:85)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_02_Oneway_Search_Economy">
-                  </a> <!-- TC_02_Oneway_Search_Economy -->
-                  <span class="method-name">TC_02_Oneway_Search_Economy</span>
+                  <a name="TS03_TC_01_Oneway_Search_Business(OneWay, MAA, Chennai, BLR, Bengaluru, 18-Aug-2020, 2, 3, 2, Business, )">
+                  </a> <!-- TS03_TC_01_Oneway_Search_Business(OneWay, MAA, Chennai, BLR, Bengaluru, 18-Aug-2020, 2, 3, 2, Business, ) -->
+                  <span class="method-name">TS03_TC_01_Oneway_Search_Business</span>
+                  <span class="parameters">(OneWay, MAA, Chennai, BLR, Bengaluru, 18-Aug-2020, 2, 3, 2, Business, )</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;li class=&quot;selected&quot;&gt; is not clickable at point (241,181) because another element &lt;div class=&quot;hsBackDrop&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;LIN37000696&apos;, ip: &apos;192.168.225.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 74.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200309095159, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16040, moz:profile: C:\Users\saswamoh\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 989f8e07-4cec-433e-8135-bd924cfc4715
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at pages.FlightSearch.enterFrom(FlightSearch.java:34)
+	at testCases.Flight_Test_Cases.Flight_TS_03.TS03_TC_01_Oneway_Search_Business(Flight_TS_03.java:24)
+	at executionEngine.TestngXmlCreator.xmlCreator(TestngXmlCreator.java:79)
+	at executionEngine.TestngXmlCreator.main(TestngXmlCreator.java:85)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TS03_TC_01_Oneway_Search_Business(OneWay, BBI, Bhubaneswar, BLR, Bengaluru, 22-Mar-2020, 2, 3, 2, Business, )">
+                  </a> <!-- TS03_TC_01_Oneway_Search_Business(OneWay, BBI, Bhubaneswar, BLR, Bengaluru, 22-Mar-2020, 2, 3, 2, Business, ) -->
+                  <span class="method-name">TS03_TC_01_Oneway_Search_Business</span>
+                  <span class="parameters">(OneWay, BBI, Bhubaneswar, BLR, Bengaluru, 22-Mar-2020, 2, 3, 2, Business, )</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@aria-label=&apos;Sun Mar 22 2020&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;LIN37000696&apos;, ip: &apos;192.168.225.209&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 74.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200309095159, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 16040, moz:profile: C:\Users\saswamoh\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 989f8e07-4cec-433e-8135-bd924cfc4715
+*** Element info: {Using=xpath, value=//*[@aria-label=&apos;Sun Mar 22 2020&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.FlightSearch.enterFromDate(FlightSearch.java:96)
+	at testCases.Flight_Test_Cases.Flight_TS_03.TS03_TC_01_Oneway_Search_Business(Flight_TS_03.java:28)
+	at executionEngine.TestngXmlCreator.xmlCreator(TestngXmlCreator.java:79)
+	at executionEngine.TestngXmlCreator.main(TestngXmlCreator.java:85)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Flight-class-passed -->
-          <div class="suite-Flight-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.Flight_Test_Cases.Flight_TS_02</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_01_Return_Verify_From_City">
-                  </a> <!-- TC_01_Return_Verify_From_City -->
-                  <span class="method-name">TC_01_Return_Verify_From_City</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_02_Return_Verify_To_City">
-                  </a> <!-- TC_02_Return_Verify_To_City -->
-                  <span class="method-name">TC_02_Return_Verify_To_City</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_03_Return_Verify_Default_Dep_Date">
-                  </a> <!-- TC_03_Return_Verify_Default_Dep_Date -->
-                  <span class="method-name">TC_03_Return_Verify_Default_Dep_Date</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_04_Return_Verify_Default_Ret_Date">
-                  </a> <!-- TC_04_Return_Verify_Default_Ret_Date -->
-                  <span class="method-name">TC_04_Return_Verify_Default_Ret_Date</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_05_Return_Verify_Search_button">
-                  </a> <!-- TC_05_Return_Verify_Search_button -->
-                  <span class="method-name">TC_05_Return_Verify_Search_button</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Flight-class-passed -->
+          </div> <!-- suite-Flight-class-failed -->
           <div class="suite-Flight-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -235,23 +245,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_01_Verify_Colour_Flight_Icon">
-                  </a> <!-- TC_01_Verify_Colour_Flight_Icon -->
-                  <span class="method-name">TC_01_Verify_Colour_Flight_Icon</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_02_Verify_Default_TripType">
-                  </a> <!-- TC_02_Verify_Default_TripType -->
-                  <span class="method-name">TC_02_Verify_Default_TripType</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_04_Verify_Default_To_Field">
-                  </a> <!-- TC_04_Verify_Default_To_Field -->
-                  <span class="method-name">TC_04_Verify_Default_To_Field</span>
+                  <a name="TS01_TC_01_Verify_Colour_Flight_Icon">
+                  </a> <!-- TS01_TC_01_Verify_Colour_Flight_Icon -->
+                  <span class="method-name">TS01_TC_01_Verify_Colour_Flight_Icon</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -267,26 +263,14 @@
 &lt;suite name=&quot;Flight&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;TmpTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCases.Flight_Test_Cases.Flight_TS_02&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;TC_01_Return_Verify_From_City&quot;/&gt;
-          &lt;include name=&quot;TC_02_Return_Verify_To_City&quot;/&gt;
-          &lt;include name=&quot;TC_03_Return_Verify_Default_Dep_Date&quot;/&gt;
-          &lt;include name=&quot;TC_04_Return_Verify_Default_Ret_Date&quot;/&gt;
-          &lt;include name=&quot;TC_05_Return_Verify_Search_button&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testCases.Flight_Test_Cases.Flight_TS_02 --&gt;
       &lt;class name=&quot;testCases.Flight_Test_Cases.Flight_TS_03&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;TC_01_Oneway_Search_Business&quot;/&gt;
-          &lt;include name=&quot;TC_02_Oneway_Search_Economy&quot;/&gt;
+          &lt;include name=&quot;TS03_TC_01_Oneway_Search_Business&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- testCases.Flight_Test_Cases.Flight_TS_03 --&gt;
       &lt;class name=&quot;testCases.Flight_Test_Cases.Flight_TS_01&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;TC_01_Verify_Colour_Flight_Icon&quot;/&gt;
-          &lt;include name=&quot;TC_02_Verify_Default_TripType&quot;/&gt;
-          &lt;include name=&quot;TC_04_Verify_Default_To_Field&quot;/&gt;
+          &lt;include name=&quot;TS01_TC_01_Verify_Colour_Flight_Icon&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- testCases.Flight_Test_Cases.Flight_TS_01 --&gt;
     &lt;/classes&gt;
@@ -302,7 +286,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TmpTest (3 classes)</span>
+                <span class="test-name">TmpTest (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -328,52 +312,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_01_Verify_Colour_Flight_Icon')
-data.setCell(0, 2, 'testCases.Flight_Test_Cases.Flight_TS_01')
-data.setCell(0, 3, 95);
+data.setCell(0, 1, 'TS03_TC_01_Oneway_Search_Business')
+data.setCell(0, 2, 'testCases.Flight_Test_Cases.Flight_TS_03')
+data.setCell(0, 3, 8654);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_04_Verify_Default_To_Field')
+data.setCell(1, 1, 'TS01_TC_01_Verify_Colour_Flight_Icon')
 data.setCell(1, 2, 'testCases.Flight_Test_Cases.Flight_TS_01')
-data.setCell(1, 3, 69);
+data.setCell(1, 3, 242);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_01_Return_Verify_From_City')
-data.setCell(2, 2, 'testCases.Flight_Test_Cases.Flight_TS_02')
-data.setCell(2, 3, 4);
+data.setCell(2, 1, 'TS03_TC_01_Oneway_Search_Business')
+data.setCell(2, 2, 'testCases.Flight_Test_Cases.Flight_TS_03')
+data.setCell(2, 3, 52);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_05_Return_Verify_Search_button')
-data.setCell(3, 2, 'testCases.Flight_Test_Cases.Flight_TS_02')
-data.setCell(3, 3, 1);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_04_Return_Verify_Default_Ret_Date')
-data.setCell(4, 2, 'testCases.Flight_Test_Cases.Flight_TS_02')
-data.setCell(4, 3, 1);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC_02_Return_Verify_To_City')
-data.setCell(5, 2, 'testCases.Flight_Test_Cases.Flight_TS_02')
-data.setCell(5, 3, 1);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC_02_Oneway_Search_Economy')
-data.setCell(6, 2, 'testCases.Flight_Test_Cases.Flight_TS_03')
-data.setCell(6, 3, 1);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC_03_Return_Verify_Default_Dep_Date')
-data.setCell(7, 2, 'testCases.Flight_Test_Cases.Flight_TS_02')
-data.setCell(7, 3, 1);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC_01_Oneway_Search_Business')
-data.setCell(8, 2, 'testCases.Flight_Test_Cases.Flight_TS_03')
-data.setCell(8, 3, 1);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC_02_Verify_Default_TripType')
-data.setCell(9, 2, 'testCases.Flight_Test_Cases.Flight_TS_01')
-data.setCell(9, 3, 0);
+data.setCell(3, 1, 'TS03_TC_01_Oneway_Search_Business')
+data.setCell(3, 2, 'testCases.Flight_Test_Cases.Flight_TS_03')
+data.setCell(3, 3, 46);
 window.suiteTableData['Flight']= { tableData: data, tableDiv: 'times-div-Flight'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 174 ms</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Flight">
               </div> <!-- times-div-Flight -->
             </div> <!-- times-div -->
@@ -388,19 +348,25 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Flight" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">7 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">testCases.Flight_Test_Cases.Flight_TS_01</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">TC_06_Verify_Default_Arr_Date</span>
+                <span class="ignored-method-name">testcasese</span>
                 <br/>
-                <span class="ignored-method-name">TC_03_Verify_Default_From_Field</span>
+                <span class="ignored-method-name">TS01_TC_05_Verify_Default_Dep_Date</span>
                 <br/>
-                <span class="ignored-method-name">TC_05_Verify_Default_Dep_Date</span>
+                <span class="ignored-method-name">TS01_TC_07_Verify_Default_Search_Btn</span>
                 <br/>
-                <span class="ignored-method-name">TC_07_Verify_Default_Search_Btn</span>
+                <span class="ignored-method-name">TS01_TC_04_Verify_Default_To_Field</span>
+                <br/>
+                <span class="ignored-method-name">TS01_TC_03_Verify_Default_From_Field</span>
+                <br/>
+                <span class="ignored-method-name">TS01_TC_06_Verify_Default_Arr_Date</span>
+                <br/>
+                <span class="ignored-method-name">TS01_TC_02_Verify_Default_TripType</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -412,67 +378,51 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.Flight_Test_Cases.Flight_TS_01</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.Flight_Test_Cases.Flight_TS_03</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">testcasese</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.Flight_Test_Cases.Flight_TS_02</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">281 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">TC_01_Return_Verify_From_City</span>
-                <span class="method-start">164 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TS03_TC_01_Oneway_Search_Business(OneWay, BBI, Bhubaneswar, BLR, Bengaluru, 22-Mar-2020, 2, 3, 2, Business, )</span>
+                <span class="method-start">19425 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TC_02_Return_Verify_To_City</span>
-                <span class="method-start">169 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TS03_TC_01_Oneway_Search_Business(OneWay, MAA, Chennai, BLR, Bengaluru, 18-Aug-2020, 2, 3, 2, Business, )</span>
+                <span class="method-start">28081 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TC_03_Return_Verify_Default_Dep_Date</span>
-                <span class="method-start">170 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TS03_TC_01_Oneway_Search_Business(null, null, null, null, null, null, null, null, null, null, null)</span>
+                <span class="method-start">28134 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_04_Return_Verify_Default_Ret_Date</span>
-                <span class="method-start">172 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_05_Return_Verify_Search_button</span>
-                <span class="method-start">173 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.Flight_Test_Cases.Flight_TS_03</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TC_01_Oneway_Search_Business</span>
-                <span class="method-start">175 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_02_Oneway_Search_Economy</span>
-                <span class="method-start">176 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">28182 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.Flight_Test_Cases.Flight_TS_01</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">178 ms</span>
+                <span class="method-start">32308 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">TC_01_Verify_Colour_Flight_Icon</span>
-                <span class="method-start">10582 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_02_Verify_Default_TripType</span>
-                <span class="method-start">10678 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC_04_Verify_Default_To_Field</span>
-                <span class="method-start">10680 ms</span>
+                <span class="method-name">TS01_TC_01_Verify_Colour_Flight_Icon</span>
+                <span class="method-start">44752 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">10750 ms</span>
+                <span class="method-start">44995 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
